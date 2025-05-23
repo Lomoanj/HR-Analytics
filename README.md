@@ -21,7 +21,7 @@ This project provides a comprehensive HR Analytics solution using **Excel**, **P
 
 ## 🔍 Project Objective
 
-The main goal is to explore and understand the factors contributing to employee attrition and recommend improvements using visual and analytical techniques. The project is intended to impress recruiters by showcasing practical skills in data analysis, dashboard creation, and insight generation.
+The main goal is to explore and understand the factors contributing to employee attrition and recommend improvements through visual and analytical techniques, demonstrating practical skills in data analysis, dashboard creation, and insight generation.
 
 ---
 
@@ -36,7 +36,7 @@ The main goal is to explore and understand the factors contributing to employee 
 
 ## 📊 Excel Dashboard
 
-> **[View Excel Dashboard Screenshot](#)**  
+> **[View Excel Dashboard Screenshot](![Excel](https://github.com/user-attachments/assets/2d4423ab-04b7-410b-a406-bac56661c4eb))**  
 *(Replace `#` with your actual screenshot link)*
 
 ---
