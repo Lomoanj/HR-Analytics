@@ -36,22 +36,40 @@ The main goal is to explore and understand the factors contributing to employee 
 
 ## 📊 Excel Dashboard
 
-> **[View Excel Dashboard Screenshot](![Excel](https://github.com/user-attachments/assets/2d4423ab-04b7-410b-a406-bac56661c4eb))**  
-*(Replace `#` with your actual screenshot link)*
+![View Excel Dashboard Screenshot](https://github.com/user-attachments/assets/2674a125-e4a2-4265-a4c8-808206f2360d)  
+
+[Excel File Link](https://github.com/Lomoanj/HR-Analytics/blob/main/Excel%20Dashboard.xlsx)
 
 ---
 
 ## 📈 Power BI Dashboard
 
-> **[View Power BI Dashboard Screenshot](#)**  
-*(Replace `#` with your actual screenshot link)*
+[![View Power BI Dashboard Screenshot](https://github.com/user-attachments/assets/232f5b82-5df0-4b25-a492-f2eeb8053deb)](https://github.com/user-attachments/assets/232f5b82-5df0-4b25-a492-f2eeb8053deb)  
+[Power BI File Link](https://github.com/Lomoanj/HR-Analytics/blob/main/HR%20Analytics%20PowerBI.pbix)
 
 ---
 
 ## 📉 Tableau Dashboard
 
-> **[View Tableau Dashboard Screenshot](#)**  
-*(Replace `#` with your actual screenshot link)*
+[![View Tableau Dashboard Screenshot](https://github.com/user-attachments/assets/fb130ec6-f89a-47ff-82ac-d951a0d28a3e)](https://github.com/user-attachments/assets/fb130ec6-f89a-47ff-82ac-d951a0d28a3e)  
+[Tableau File Link](https://github.com/Lomoanj/HR-Analytics/blob/main/HR%20Analytics%20Tableau.twbx)
+
+---
+
+## 🧮 SQL Highlights & Sample Queries
+
+```sql
+select department, count(attrition),round((count(attrition)/(count(attrition) over())),2) percentage
+from hrdata where attrition='yes' and education='high school' group by 1 order by 2 desc;  
+
+select department, count(attrition),round((count(attrition)/
+(select count(attrition) from hrdata where attrition='yes' and education='high school'))*100,2) percentage
+from hrdata where attrition='yes' and education='high school' group by 1 order by 2 desc;
+
+select age_band, gender, count(attrition), count(attrition)*100/sum(count(attrition)) over() percent_of_total
+from hrdata where attrition='yes' group by 1,2 order by 1,2;
+```
+[Link to SQL Queries](https://github.com/Lomoanj/HR-Analytics/blob/main/HR_Queries.sql)
 
 ---
 
@@ -92,20 +110,17 @@ The main goal is to explore and understand the factors contributing to employee 
 ## ✨ Author
 
 **Lomoanj P J** – Data Analyst  
-This project is created to showcase real-world HR data analysis capabilities.
+This project is created to showcase real-world HR data analysis capabilities.  
+[Dataset Download Link](https://github.com/Lomoanj/HR-Analytics/blob/main/HR%20Data.xlsx)
 
 ---
 
 ## 📬 Contact
 
-- LinkedIn: [your-linkedin-url](#)  
-- Email: your.email@example.com  
-- GitHub: [your-github-url](#)  
-
-*(Replace `#` and email with your actual contact info)*
+- LinkedIn: [linkedin.com/in/lomoanj/](https://www.linkedin.com/in/lomoanj/)  
+- Email: [lomoanj@gmail.com](mailto:lomoanj@gmail.com)  
+- GitHub: [github.com/Lomoanj](https://github.com/Lomoanj)  
 
 ---
 
 Feel free to reach out or suggest improvements!
-
-
